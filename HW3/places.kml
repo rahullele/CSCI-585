@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<Style id="z1">
+<IconStyle><Icon><href>http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png</href></Icon></IconStyle>
+</Style>
+<Style id="convex">
+      <LineStyle>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>ff00FFff</color>
+      </PolyStyle>
+    </Style>
+<Style id="nn">
+			<LineStyle>
+			<color>ff0000ff</color>
+			<width>4</width>
+			</LineStyle>
+	</Style>
+<Placemark><name>Downey Way Entrance</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2893872,34.0214868</coordinates></Point>
+</Placemark>
+<Placemark><name>Exposition Blvd Entrance</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28889316699292,34.01878866455476</coordinates></Point>
+</Placemark>
+<Placemark><name>Child's way entrance</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2820576459425,34.019129036604205</coordinates></Point>
+</Placemark>
+<Placemark><name>Leavy Library</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2824448,34.0206573</coordinates></Point>
+</Placemark>
+<Placemark><name>Tommy Trojan</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28551959559508,34.02061372842925</coordinates></Point>
+</Placemark>
+<Placemark><name>SAL</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28720204720075,34.020809702826945</coordinates></Point>
+</Placemark>
+<Placemark><name>McClintok Ave</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28750644830852,34.02437617599719</coordinates></Point>
+</Placemark>
+<Placemark><name>Annenberg School</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28590256376482,34.02245502729128</coordinates></Point>
+</Placemark>
+<Placemark><name>Residence</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28839,34.0308924</coordinates></Point>
+</Placemark>
+
+<Placemark>
+          <name>Convex Hull</name>
+          <visibility>1</visibility>
+          <styleUrl>#convex</styleUrl>
+          <Polygon>
+            <extrude>1</extrude>
+            <altitudeMode>relativeToGround</altitudeMode>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-118.288893166993,34.0187886645548,17
+                -118.2893872,34.0214868,17
+                -118.28839,34.0308924,17
+                -118.2824448,34.0206573,17
+                -118.282057645943,34.0191290366042,17
+                -118.288893166993,34.0187886645548,17
+                </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+
+<Placemark>
+		<name> Nearest Neighbour</name>
+		<styleUrl>#nn</styleUrl>
+		<LineString>
+	        <altitudeMode>absolute</altitudeMode>
+	        <coordinates> 
+	        	-118.28839,34.0308924,90
+                -118.287506448309,34.0243761759972,90
+                -118.28839,34.0308924,90 
+                -118.285902563765,34.0224550272913,90
+                -118.28839,34.0308924,90
+                -118.2893872,34.0214868,90
+	        </coordinates>
+      	</LineString>
+      	
+	</Placemark>
+</Document></kml>

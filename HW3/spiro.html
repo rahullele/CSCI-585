@@ -1,0 +1,32 @@
+<html>
+<canvas id="spiro"></canvas>
+<script>
+var xstart=-118.28917480000001;
+var ystart=34.0212361;
+var canvas=document.getElementById("spiro");
+    var ctx = canvas.getContext('2d');
+
+if(canvas.getContext){
+
+var R=8,r=1,a=4;
+var x0=R+r, y0=0;
+ctx.moveTo(150+10*x0,150+10*y0);
+
+var cos=Math.cos, sin=Math.sin, pi=Math.PI, nRev=16;
+for(var t=0.0;t<(pi*nRev);t+=0.01){
+ var x=(R+r)*cos((r/R)*t) - a*cos((1+r/R)*t);
+ var y=(R+r)*sin((r/R)*t) - a*sin((1+r/R)*t);
+    
+ var tempx=xstart+x;
+ var tempy=ystart+y;
+ 
+    ctx.lineTo(150+10*x,150+10*y);
+
+ document.write(tempx+","+tempy+",");
+ document.write("<br/>");
+
+}
+ ctx.stroke();
+}
+    </script>
+    </html>
